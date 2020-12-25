@@ -3,16 +3,24 @@ Creating datasets for personal deep learning projects using Google Images. Dupli
 
 ### Usage
 
-1. Open a command prompt and execute the following to download the repository:
+Open a command prompt and execute the following to download the repository:
 ```
 git clone https://github.com/saifjamsheer/google-dataset-creator.git
 ```
-2. Access the cloned repository by executing the following in the command prompt:
+Access the cloned repository by executing the following in the command prompt:
 ```
 cd google-dataset-creator
 ```
-3. Download the necessary libraries using the command prompt:
+Download the necessary libraries using the command prompt:
 ```
 pip install -r requirements.txt
+```
+After generating the 'urls.txt' file by following the instructions in [urls.js](urls.js), run the following script to download the desired images:
+```
+create.py --urls url_textfile_path
+```
+To delete any duplicate images, ensure that all images are in [dataset](dataset) and run the following script:
+```
+delete.py
 ```
 
