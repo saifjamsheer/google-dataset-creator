@@ -41,9 +41,11 @@ for url in rows:
     except:
 	    print("[INFO] Error downloading: {}".format(p))
 
+image_paths = paths.list_images(output_path)
+
 # Loop through the images in the output path to determine
 # if image should be deleted
-for image_path in paths.list_images(output_path):
+for image_path in image_paths:
 	# Initialize variable that determines if an image
     # should be deleted
 	delete = False
